@@ -34,6 +34,18 @@ header {
     margin-right: 5%;
 }
 
+.usuario button {
+    background-color: #12CDD4;
+    border: 5px solid #0CA789;
+    border-radius: 10px;
+    cursor:pointer;
+    padding: 3px;
+}
+
+.usuario button:hover {
+    background-color: #0CA789;
+}
+
 
 .logo {
     width: 25%;
