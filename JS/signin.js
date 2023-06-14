@@ -39,7 +39,7 @@ function entrar() {
   });
 
   if (usuario.value == userValid.user && senha.value == userValid.senha) {
-    window.location.href = "../html/cookies.html";
+    window.location.href = "../html/index.html";
 
     let mathRandom = Math.random().toString(16).substr(2);
     let token = mathRandom + mathRandom + "Amamos_DS_;-)";

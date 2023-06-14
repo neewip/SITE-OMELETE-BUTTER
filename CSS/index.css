@@ -93,13 +93,14 @@ header {
 .menu {
     width: 150%;
     margin-right: 2%;
-    
+   
 }
+
 
 .menu nav a {
     color: #c4c4c4;
     text-decoration: none;
-    font-size: 18px;
+    font-size:20px;
     padding-right: 30px;
     padding-bottom: 8px;
     position: relative;
@@ -142,7 +143,7 @@ img {vertical-align: middle;}
 .text {
     background-color: #0ca78889;
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 20px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
