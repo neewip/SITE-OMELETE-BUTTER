@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Séries | Butter</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <script src="https://kit.fontawesome.com/819c372c58.js" crossorigin="anonymous"></script>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/form.js" defer></script>
+    <link rel="shortcut icon" href="cookie.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/cookies.css" />
+
+</head>
+<body>
+
+  <div class="cookies-msg" id="cookies-msg">
+    <div class="cookies-txt">
+        <p>
+            Este site usa cookies e tecnologias afins, que são pequenos arquivos
+            ou pedaços de texto baixados para um aparelho quando o visitante
+            acessa um website ou aplicativo. Ao utilizar nosso site você está de
+            acordo com a utilização dos cookies para te proporcionar uma melhor
+            experiência.
+        </p>
+
+        <div class="cookies-btn-sim">
+            <button onclick="aceito()">Aceito</button>
+        </div>
+
+        <div class="cookies-btn-nao">
+            <button onclick="naoAceito()">Não Aceito</button>
+        </div>
+    </div>
+</div>
+
+<div id="ACEITO"></div>
+
+<script src="../js/cookies.js"></script>
+
+
+<header>
+    <div class="container">
+        <div class="usuario">
+            <i class="fa-solid fa-user"></i><p id="logado"></p>
+          <button onclick="login()">Login</button>
+          <button onclick="sair()">Sair</button>
+        </div>
+        <div class="logo"> 
+            <a href="../HTML/index.html">
+            <img src="../IMG/Butter Logo.png">
+            </a>
+        </div>
+        <div class="menu">
+            <nav>
+              <a href="../HTML/Filmes.html">Filmes</a>
+              <a href="../HTML/series.html">Séries</a>
+              <a href="../HTML/musicas.html">Músicas</a>
+              <a href="../HTML/HQ.html">HQs</a>
+              <a href="../HTML/animeemanga.html">Mangá e Animes</a>
+            </nav>
+        </div>
+        <div class="social">  
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-facebook-f"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></button>
+                <button><i class="fa-brands fa-twitter"></i></button> 
+
+                <button style="width: 70px; font-size:small; position: absolute;"><a href="../HTML/form.html">CONTATO</a></button>
+        </div>
+    </div>
+</header>
+
+<br>
+
+<fieldset>
+    <legend><strong>CONTATE-NOS</strong></legend>
+
+    <form id="form" action="../HTML/enviado.html" style="max-width:500px;margin:left">
+
+        
+        <div class="input-container">
+            <i class="fa-solid fa-user icon"></i>
+            <input id="fname" class="input-field" type="text" placeholder="Digite seu nome" name="Nome" required>
+          </div>
+
+        <div class="input-container">
+          <i class="fa fa-user icon"></i>
+          <input id="lname" class="input-field" type="text" placeholder="Digite seu Sobrenome" name="Sobrenome" required>
+        </div>
+
+        <div class="input-container">
+           <i class="fa-solid fa-calendar-days icon"></i>
+            <input id="dataNasc" type="date" value="dd-mm-aa" min='1900-01-01' required>
+            
+          </div>
+
+          <div class="input-container">
+            <i class="fa-solid fa-phone icon"></i>
+            <label for="telefone"></label>
+            <input type="tel" id="telefone" class="input-field"  placeholder="Informe seu telefone | modelo: 12-34567-8901" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"  required>
+          </div>
+
+        <div class="input-container">
+            <i class="fa-solid fa-envelope icon"></i>
+            <input class="input-field" type="email" placeholder="Digite seu Email" name="Email" required>
+          </div>
+      
+        <div class="input-container">
+            <i class="fa-solid fa-house icon"></i>
+          <input id="endereco" class="input-field" type="text" placeholder="Informe seu endereço" name="Endereço" required>
+        </div>
+        
+        <div class="input-container">
+            <i class="fa-solid fa-house icon"></i>
+          <input class="input-field" type="number" min="0" placeholder="Informe seu número de casa" name="Número" required>
+        </div>
+
+        <div class="input-container">
+            <i class="fa-solid fa-house icon"></i>
+            <input class="input-field" id="bairro" type="text" placeholder="Informe seu bairro" name="Bairro" required>
+          </div>
+
+          <div class="input-container">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <input class="input-field" id="cidade" type="text" placeholder="Informe sua cidade" name="Cidade" required>
+          </div>
+
+          <div class="input-container">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <label for="telefone"></label>
+            <input type="CEP" id="CEP" class="input-field"  placeholder="Informe seu CEP | modelo: 01234-567" pattern="[0-9]{5}-[0-9]{3}" required>
+          </div>
+
+          <div class="input-container"> 
+            <label for="Estado"></label>
+            <i class="fa-solid fa-earth-americas icon"></i>
+            <select id="Estado" name="Estado" required>
+            <option value="ESTD"> ESTADO </option> 
+            <option value="AC"> AC </option>
+            <option value="AL"> AL </option>
+            <option value="AP"> AP </option>
+            <option value="AM"> AM </option>
+            <option value="BA"> BA </option>
+            <option value="CE"> CE </option>
+            <option value="ES"> ES </option>
+            <option value="GO"> GO </option>
+            <option value="MA"> MA </option>
+            <option value="MT"> MT </option>
+            <option value="MS"> MS </option>
+            <option value="MG"> MG </option>
+            <option value="PA"> PA </option>
+            <option value="PB"> PB </option>
+            <option value="PR"> PR </option>
+            <option value="PE"> PE </option>
+            <option value="PI"> PI </option>
+            <option value="RJ"> RJ </option>
+            <option value="RN"> RN </option>
+            <option value="RS"> RS </option>
+            <option value="RO"> RO </option>
+            <option value="RR"> RR </option>
+            <option value="SC"> SC </option>
+            <option value="SP"> SP </option>
+            <option value="SE"> SE </option>
+            <option value="TO"> TO </option>
+            </select>
+          </div>
+
+          <div class="input-container">
+            <i style="margin-right: 1%;" class="fa-solid fa-venus icon"></i><br>
+          <input  type="radio" id="sexo" name="sexo" value="FEMININO" required>
+        
+
+        <i style="margin-left: 2%; margin-right: 1%;" class="fa-solid fa-mars icon"></i>
+    <input type="radio" id="sexo" name="sexo" value="MASCULINO" required>
+</div>
+
+            <div class="input-container">
+                <i class="fa-solid fa-film icon"></i>
+                <input class="input-field" type="text" placeholder="Digite seu filme predileto" name="Filme">
+              </div>
+
+              <div class="input-container">
+                <i class="fa-solid fa-film icon"></i>
+                <input class="input-field" type="text" placeholder="Digite sua série predileta" name="Serie">
+              </div>
+
+              <div class="input-container">
+                <i class="fa-solid fa-music icon"></i>
+                <input class="input-field" type="text" placeholder="Digite sua música predileta" name="Musica">
+              </div>
+
+              <div class="input-container">
+                <i class="fa-solid fa-book icon"></i>
+                <input class="input-field" type="text" placeholder="Digite sua HQ predileta" name="HQ">
+              </div>
+
+              <div class="input-container">
+                <i class="fa-solid fa-book-open icon"></i>
+                <input class="input-field" type="text" placeholder="Digite seu animangá predileto" name="Animanga">
+              </div>
+            
+                  
+        <button onclick="button()" type="submit" class="btn">Enviar</button>
+      </form>
+      </fieldset>
+
+      <footer>
+        <img src="../IMG/Butter Logo.png" width="100px" height="50px">
+      </footer>
+      
+</body>
+</html>
+
+
+
