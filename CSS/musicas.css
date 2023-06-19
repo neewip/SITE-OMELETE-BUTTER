@@ -61,6 +61,16 @@ header {
     width: 100%;
 }
 
+.social a {
+    text-decoration: none;
+    color:white
+}
+
+.social a:hover {
+    color:white
+}
+
+
 .social button {
     width: 40px;
     height: 40px;
@@ -93,7 +103,7 @@ header {
 .menu {
     width: 150%;
     margin-right: 2%;
-   
+    margin-top: 2%;
 }
 
 
@@ -246,6 +256,7 @@ H1 {
 a {
     text-decoration: none;
 }
+
 a:hover {
     color:#0CA789
 }
@@ -278,6 +289,12 @@ a:hover {
     
 }
 
+.contact {
+    width: 70px; font-size:small; position: absolute;
+}
+
+
+
 
 /* footer */
 
@@ -288,7 +305,7 @@ width: 100%;
 text-align: center;
 }
 
-/* musica - NOTICIA */
+/* SERIE - NOTICIA */
 
 .paragrafo2 {
     border: 5px solid #0CA789;
@@ -302,13 +319,76 @@ text-align: center;
     margin-bottom: 3%; 
 }
 
-
 .iframe {
     margin:0 auto; display:block
 }
 
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 700px) {
     .text {font-size: 11px}
+
+    header{
+       max-width:100%;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .p {
+        display: none;
+    }
+
+    .usuario {
+        width: 80vw;
+        margin-right: 2vw;
+    }
+    
+    .menu nav a {
+        font-size: medium;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0%;
+    }
+
+    .noticia1 {
+        margin-left: 0;
+        width: 50%;
+    }
+
+    .noticia2 {
+        margin-left:0;
+        width: 50%;
+    }
+
+
+    .contact {
+        position: none;
+        margin-top: -3%;
+    }
+
+    .social button {
+        width: fit-content;
+        position: none;
+    }
+
+    .noticia1 img, .noticia2 img {
+        max-width: 100vw;
+    }
+
+    .legenda {
+        display: none;
+    }
+
+    .paragrafo {
+        width: 100%;
+        margin-left: 0;
+    }
+
   }
