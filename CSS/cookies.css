@@ -1,0 +1,73 @@
+.cookies-msg {
+    width: 80%;
+    background-color: gray;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    display: none;
+    color:white
+}
+
+.cookies-msg.mostrar {
+    display: block;
+}
+
+.cookies-msg .cookies-txt {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.cookies-msg .cookies-btn-sim {
+    margin-left: 30px;
+}
+
+.cookies-msg .cookies-btn-sim button {
+    height: 75px;
+    background-color: green;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cookies-msg .cookies-btn-sim button:hover {
+    transform: scale(0.9);
+}
+
+.cookies-msg .cookies-btn-nao {
+    margin-left: 30px;
+}
+
+.cookies-msg .cookies-btn-nao button {
+    height: 75px;
+    background-color: red;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.cookies-msg .cookies-btn-nao button:hover {
+    transform: scale(0.9);
+}
+
+@media (max-width: 850px) {
+    .cookies-msg .cookies-txt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cookies-msg .cookies-btn-sim button {
+        height: 75px;
+        width: 180px;
+        margin-bottom: 5px;
+    }
+}
