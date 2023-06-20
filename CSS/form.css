@@ -102,7 +102,6 @@ header {
 .menu {
     width: 150%;
     margin-right: 2%;
-    margin-top: 2%;
    
 }
 
@@ -133,6 +132,14 @@ header {
 
 .menu nav a:hover {
     color: #0CA789;
+}
+
+.linha{
+  background-color: gray;
+  width: 5px;
+  height: 90px;
+  margin-right: 5%;
+
 }
 
 
@@ -198,7 +205,7 @@ img {vertical-align: middle;}
 
 /* BODY */
 
-input[type=text], input[type=password],  input[type=CEP],  input[type=tel], select, input[type=date] {
+input[type=text], input[type=password],  input[type=CEP],  input[type=tel], select, input[type=date], input[type=number], input[type=email]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -207,13 +214,15 @@ input[type=text], input[type=password],  input[type=CEP],  input[type=tel], sele
     outline: none;
   }
   
-  input[type=text]:focus, input[type=password]:focus,  input[type=CEP]:focus,  input[type=tel]:focus, select:focus, input[type=date]:focus{
+  input[type=text]:focus, input[type=password]:focus,  input[type=CEP]:focus,  input[type=tel]:focus, select:focus, input[type=date]:focus, input[type=number]:focus, input[type=email]:focus {
     background-color: lightblue;
   }
 
 fieldset {
     border: 5px solid #0CA789;
-    
+    width: 70%;
+    margin:0 auto;
+    padding: 2%;
 }
 
 legend {
@@ -293,3 +302,67 @@ footer {
     margin-bottom: 3%;
 }
   
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+  .text {font-size: 11px}
+
+  header{
+     max-width:100%;
+  }
+
+  .logo img {
+      width: 100px;
+      height: 50px;
+  }
+
+  .p {
+      display: none;
+  }
+
+  .usuario {
+      width: 80vw;
+      margin-right: 2vw;
+  }
+  
+  .menu nav a {
+      font-size: medium;
+  }
+
+  nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 0%;
+  }
+
+  .contact {
+      position: none;
+      margin-top: -3%;
+  }
+
+  .social button {
+      width: fit-content;
+      position: none;
+  }
+
+
+  .paragrafo {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  fieldset {
+    max-width: 100%;
+    margin:0 auto;
+  }
+
+  input[type=text], input[type=password],  input[type=CEP],  input[type=tel], select, input[type=date], input[type=number], input[type=email] {
+    width: 70%;
+  }
+
+  .input-container {
+    max-width: 100%;
+  }
+
+}
