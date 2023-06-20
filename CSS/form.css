@@ -206,7 +206,7 @@ img {vertical-align: middle;}
 /* BODY */
 
 input[type=text], input[type=password],  input[type=CEP],  input[type=tel], select, input[type=date], input[type=number], input[type=email]{
-    width: 100%;
+    width: 70%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
