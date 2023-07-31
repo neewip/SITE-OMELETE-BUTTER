@@ -72,6 +72,7 @@ header {
     color:white
 }
 
+
 .social button {
     width: 40px;
     height: 40px;
@@ -92,6 +93,7 @@ header {
 .social button:hover {
     transform: scale(0.9);
 }
+
 
 .container {
     max-width: 100%;
